@@ -15,37 +15,31 @@ public class Card
     private int value;
     private String suits; //encapsulation
     //constant
-    public static final String [] SUITS = { "diamonds","clubs","spades","hearts"};
+    public Card(){
+    
+    }
+    public  final String [] SUITS = { "diamonds","clubs","spades","hearts"};
 
     /**
      * @return the value
      */
+    public String getSuit(){
+        return suits;
+    }
+    
+    public void setSuit(String suit) {
+        this.suits = suit;
+    }
+    
     public int getValue() {
         return value;
     }
 
-    /**
-     * @param value the value to set
-     */
-    public void setValue(int value) {
-        this.value = value;
-    }
-
-    /**
-     * @return the suits
-     */
-    public String getSuits() {
-        return suits;
-    }
-
-    /**
-     * @param suits the suits to set
-     */
-    public void setSuits(String suits) {
-        this.suits = suits;
-    }
-   //number
-    
-    //method for suits
-    
+     public void setValue(int value) {
+         this.value = value;
+     }
+     
+     public String ToString(){
+         return getValue()+""+getSuit();
+     }
 }
