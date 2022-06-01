@@ -20,6 +20,9 @@ public class CardTrickICE1 {
      */
     public static void main(String[] args)throws Exception {
         String Suits;
+        Card luckyCard = new Card();
+        luckyCard.setValue(11);
+        luckyCard.setSuit("diamond");
         int val;
         boolean Result = false;
         
